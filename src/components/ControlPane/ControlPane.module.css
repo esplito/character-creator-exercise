@@ -4,12 +4,24 @@
   padding-top: 18px;
   background-color: white;
   border-radius: 8px;
+  display: flex;
+  flex: 1 0 300px;
+  flex-direction: column;
   /*
     HACK: Margin on an outer bound like this is
     a little gross, but we haven't seen the tools
     to deal with it yet!
   */
   margin-bottom: 32px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .controlPane {
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: column;
+  }
 }
 
 .title {
